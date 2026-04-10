@@ -1,3 +1,7 @@
+AI USAGE DISCLAIMER
+
+Parts of this project have been developed with the assistance of OpenAI’s Claude Sonnet 4.6. The AI was used to fix code errors, structure methodological workflows. Figures and graphs developed with AI assistance have been carefully reviewed, edited, and validated by me. I take full responsibility for the final content and its accuracy, relevance, and academic integrity.
+
 # P5. In RAG We Trust?
 
 This project evaluates how **Retrieval-Augmented Generation (RAG)** systems behave when the retrieved evidence is intentionally contaminated with false or conflicting information. Rather than proposing a new RAG architecture, the study focuses on **quantifying robustness** by measuring how different prompt strategies affect factual reliability, source grounding, and resistance to poisoned context.
