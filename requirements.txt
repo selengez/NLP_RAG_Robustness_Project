@@ -1,0 +1,20 @@
+#  ML
+torch
+transformers
+sentence-transformers
+datasets
+faiss-cpu
+
+# Data
+pandas
+numpy
+scikit-learn
+
+# Visualization
+matplotlib
+seaborn
+
+# Config & utilities
+pyyaml
+python-dotenv
+tqdm

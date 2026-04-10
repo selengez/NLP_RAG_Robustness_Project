@@ -1,0 +1,16 @@
+model_name: all-MiniLM-L6-v2
+top_k: 3              # lower = more precise, less noise per query
+
+# Chunking
+chunk_size: 40        # smaller = tighter, more atomic facts per chunk
+chunk_overlap: 10
+
+# FAISS
+index_type: FlatL2    # exact search; switch to IVFFlat for large corpora
+
+# Reranking
+rerank: true          # re-score a wider pool before taking top-k
+rerank_factor: 3      # pool = top_k × rerank_factor
+
+# Document diversity
+diverse_retrieval: true  # prefer chunks from different source documents

@@ -1,0 +1,42 @@
+strategies:
+
+  standard_prompt:
+    name: "Standard"
+    system: |
+      Answer using ONLY the sources below.
+      Output ONLY: SUPPORTS, REFUTES, or UNCERTAIN.
+    question_format: "Claim: {question}"
+    answer_prefix: "FINAL ANSWER:"
+
+  verification_prompt:
+    name: "Verification"
+    system: |
+      Answer using ONLY the sources below.
+      If sources contradict each other, output UNCERTAIN.
+      Otherwise output SUPPORTS or REFUTES.
+    question_format: "Claim: {question}"
+    answer_prefix: "FINAL ANSWER:"
+
+  uncertainty_prompt:
+    name: "Uncertainty"
+    system: |
+      Answer using ONLY the sources below.
+      If you are not sure or sources conflict, output UNCERTAIN.
+      Otherwise output SUPPORTS or REFUTES.
+    question_format: "Claim: {question}"
+    answer_prefix: "FINAL ANSWER:"
+
+
+source_format: "[Source {i}]: {text}"
+
+
+conflict_keywords:
+  - uncertain
+  - contradict
+  - conflict
+  - inconsistent
+  - disagree
+  - "source 1"
+  - "source 2"
+  - differ
+  - discrepancy

@@ -1,0 +1,5 @@
+huggingface:
+  model_id: google/flan-t5-base   # small, CPU-friendly, instruction-following
+  device: cpu                     
+  max_new_tokens: 128
+  do_sample: false
